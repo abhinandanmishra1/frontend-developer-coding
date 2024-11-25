@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.employees {
+  display: flex;
+  gap: 40px;
+}
+
+.employees__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  background-color: rgb(224, 224, 221);
+  padding: 10px;
+}
+
+.employees__list li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.employees__list li:hover {
+  background: gray;
+  color: whitesmoke;
+}
+
+.employee__details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.employee__details--img {
+  width: 100px;
+  aspect-ratio: 1;
+}
