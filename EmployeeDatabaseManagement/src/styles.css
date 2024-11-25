@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 60%;
+  margin: 10% auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.employees {
+  display: flex;
+  gap: 40px;
+}
+
+.employees__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  background-color: rgb(224, 224, 221);
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+.employees__list li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.employees__list li:hover {
+  background: gray;
+  color: whitesmoke;
+}
+
+.employee__details {
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.employee__details--img {
+  width: 100px;
+  aspect-ratio: 1;
+}
+
+.app {
+  position: relative;
+}
+
+.add-employee-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-employee-btn:hover {
+  background: gray;
+  color: whitesmoke;
+}
+
+.add-employee-modal {
+  z-index: 1;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  flex-direction: column;
+}
+
+.add-employee-modal form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.add-employee-modal form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-employee-modal form button:hover {
+  background: gray;
+  color: whitesmoke;
+}
+
+.add-employee-modal form input {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
