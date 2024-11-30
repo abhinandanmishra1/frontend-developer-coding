@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.main {
+  width: 500px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  padding: 10px;
+  height: 300px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dadada;
+  font-size: 16px;
+}
+
+.manipulate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.manipulate button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+
+.typing-effect {
+  margin-top: 10px;
+  font-size: 16px;
+  border: 2px solid orange;
+  padding: 10px;
+}
+
+.typing-effect::after {
+  content: "|";
+  display: inline-block;
+  animation: blink 1s infinite;
+  margin-left: 3px;
+  line-height: 16px;
+  font-size: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
