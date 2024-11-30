@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+#app {
+  width: 30%;
+  margin: 10% auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.elements {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.element {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.element:hover {
+  background-color: gray;
+  color: white;
+}
+
+.popover {
+ border: 2px solid red;
+ display: flex;
+ flex-direction: column;
+ min-width: 150px;
+}
+
+.popover .navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popover .navigation-button {
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  color: white;
+}
+
+.popover .navigation-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
