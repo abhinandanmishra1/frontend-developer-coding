@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery__image--model {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
